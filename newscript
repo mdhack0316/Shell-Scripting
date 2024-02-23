@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "Choose an Option"
+echo "A.  Addition of Numbers"
+echo "B.  Subtraction of Numbers"
+echo "C.  Multiplication of two numbers"
+echo "D.  Divison of Numbers"
+
+addition() {
+	local  num1=$1
+	local  num2=$2
+	let sum=$num1+$num2
+	echo "Sum of $num1 and $num2 is $sum"
+
+}
+
+
+
+
+
+read answer
+
+case $answer in 
+	a)   addition
+esac
